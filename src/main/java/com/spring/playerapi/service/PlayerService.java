@@ -1,8 +1,7 @@
-package com.spring.player.service;
+package com.spring.playerapi.service;
 
-
-import com.spring.player.dao.PlayerDAO;
-import com.spring.player.model.Player;
+import com.spring.playerapi.dao.PlayerDAO;
+import com.spring.playerapi.model.Player;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +15,10 @@ public class PlayerService {
     @Autowired
     public PlayerService(PlayerDAO playerDAO) {
         this.playerDao = playerDAO;
+    }
+
+    public Player getPlayerByName(String playername) {
+        return playerDao.findByName(playername);
     }
 
     public List<Player> allPlayers() {
@@ -34,10 +37,6 @@ public class PlayerService {
 
     public void deletePlayer(int id) {
         playerDao.deleteById(id);
-    }
 
-
-    public Player getPlayerByName(String playerName){
-        return playerDao.findByName(playerName);
     }
 }

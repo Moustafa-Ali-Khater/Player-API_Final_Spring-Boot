@@ -1,4 +1,4 @@
-package com.spring.player;
+package com.spring.playerapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

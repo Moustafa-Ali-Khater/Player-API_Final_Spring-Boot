@@ -1,4 +1,4 @@
-package com.spring.player.model;
+package com.spring.playerapi.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -36,5 +36,4 @@ public class Player {
 
     @Column(name = "player_phone")
     private String phone;
-
 }

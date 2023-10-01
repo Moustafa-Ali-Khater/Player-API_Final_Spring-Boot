@@ -8,10 +8,10 @@
         <version>2.4.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.spring.playerapi</groupId>
+    <groupId>com.spring.player</groupId>
     <artifactId>player-api</artifactId>
     <version>1.0</version>
-    <name>Player API</name>
+    <name>player-api</name>
     <description>Player API</description>
     <properties>
         <java.version>1.8</java.version>
